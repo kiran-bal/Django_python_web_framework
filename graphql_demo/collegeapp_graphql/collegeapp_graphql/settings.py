@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # custom apps for project
     'graphene_django',
     'rest_framework',
     'collegeapp',
@@ -122,4 +124,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Importing the schema from the project to GRAPHENE
 GRAPHENE = { 'SCHEMA': 'collegeapp_graphql.schema.schema', }

@@ -8,5 +8,5 @@ from collegeapp_graphql.schema import schema
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('graphql', GraphQLView.as_view(graphiql=True)),
-    url(r'api/', include(router.urls)), # api urls for student and university
+    url(r'api/', include(router.urls)),  # api urls for student and university
 ]
